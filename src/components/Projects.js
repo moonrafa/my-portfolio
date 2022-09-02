@@ -1,5 +1,6 @@
 import demo1 from '../assets/img/lastfm-square.svg'
-import { Container, Row, Col } from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
+import { Container, Row, Col, Tab } from 'react-bootstrap'
 export const Projects = () => {
   const projects = [
     {
@@ -44,7 +45,7 @@ export const Projects = () => {
     }
   ]
   return (
-    <section>
+    <section id="projects" className="project">
       <Container>
         <Row>
           <Col>
@@ -54,6 +55,28 @@ export const Projects = () => {
               creating new ones every day. For more details about each one,
               click on the demo to be taken to its GitHub repository.
             </p>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav variant="pills">
+                <Nav.Item>
+                  <Nav.Link eventKey="first">Front-End</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">Back-End</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="third">FullStack</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Tab.Content>
+                <Tab.Pane eventKey="first">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <p>{project.title}</p>
+                    })}
+                  </Row>
+                </Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
       </Container>
