@@ -54,17 +54,18 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my portfolio.</span>
             <h1>
-              {"I'm Rafaelly Rodrigues, "}
+              {"I'm Rafaelly Rodrigues"}
+              <br />
               <span className="wrap"> {text}</span>
             </h1>
             <p>
               I'm majoring in Information Technology at the Federal University
-              of Mato Grosso do Sul (UFMS). I love buildIng beautiful and useful
-              interfaces. I'm passionate and creative, yet logical and
-              analytical, and I believe that building modern websites require a
-              combination of both in order to create the best user experience.
-              I'm naturally curious, quietly confident and always learning new
-              things and improving my skills.
+              of Mato Grosso do Sul (UFMS). I love building beautiful and
+              functional interfaces. I'm passionate and creative, yet logical
+              and analytical, and I believe that building modern websites
+              require a combination of both in order to create the best user
+              experience. I'm naturally curious, quietly confident, and always
+              learning new things and improving my skills.
             </p>
             <button onClick={() => console.log('connect')}>
               Contact me <ArrowRightCircle size={25} />
@@ -74,22 +75,22 @@ export const Banner = () => {
             <div className="stage-cube-cont">
               <div className="cubespinner">
                 <div className="face1">
-                  <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                  <FontAwesomeIcon icon={faReact} color="#AB7B83" />
                 </div>
                 <div className="face2">
-                  <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                  <FontAwesomeIcon icon={faHtml5} color="#AB7B83" />
                 </div>
                 <div className="face3">
-                  <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                  <FontAwesomeIcon icon={faCss3} color="#AB7B83" />
                 </div>
                 <div className="face4">
-                  <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                  <FontAwesomeIcon icon={faJsSquare} color="#fff" />
                 </div>
                 <div className="face5">
-                  <FontAwesomeIcon icon={faNode} color="#89BB3C" />
+                  <FontAwesomeIcon icon={faNode} color="#fff" />
                 </div>
                 <div className="face6">
-                  <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                  <FontAwesomeIcon icon={faGitAlt} color="#fff" />
                 </div>
               </div>
             </div>

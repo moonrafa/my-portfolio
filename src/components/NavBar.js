@@ -6,6 +6,7 @@ import logo from '../assets/img/_DEV__.svg'
 import linkedinIcon from '../assets/img/linkedin-square.svg'
 import githubIcon from '../assets/img/github-alt.svg'
 import twitterIcon from '../assets/img/twitter.svg'
+import lastfmIcon from '../assets/img/lastfm-square.svg'
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
@@ -86,7 +87,15 @@ export const NavBar = () => {
               >
                 <img src={twitterIcon} alt="" />
               </a>
+              <a
+                href="https://www.last.fm/user/asoftuniverse"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={lastfmIcon} alt="" />
+              </a>
             </div>
+
             <button className="vvd" onClick={() => console.log('connect w me')}>
               <span>Contact me</span>
             </button>
