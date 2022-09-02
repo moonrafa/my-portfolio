@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import logo from '../assets/img/logo.svg'
-import navIcon1 from '../assets/img/linkedin-square.svg'
-import navIcon2 from '../assets/img/github-alt.svg'
-import navIcon3 from '../assets/img/twitter.svg'
+import logo from '../assets/img/_DEV__.svg'
+import linkedinIcon from '../assets/img/linkedin-square.svg'
+import githubIcon from '../assets/img/github-alt.svg'
+import twitterIcon from '../assets/img/twitter.svg'
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
@@ -40,7 +40,7 @@ export const NavBar = () => {
               className={
                 activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
               }
-              onCLick={() => onUpdateActiveLink('home')}
+              onClick={() => onUpdateActiveLink('home')}
             >
               Home
             </Nav.Link>
@@ -49,7 +49,7 @@ export const NavBar = () => {
               className={
                 activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
               }
-              onCLick={() => onUpdateActiveLink('skills')}
+              onClick={() => onUpdateActiveLink('skills')}
             >
               Skills
             </Nav.Link>
@@ -58,21 +58,33 @@ export const NavBar = () => {
               className={
                 activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'
               }
-              onCLick={() => onUpdateActiveLink('projects')}
+              onClick={() => onUpdateActiveLink('projects')}
             >
               Projects
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://linkedin.com/in/moonrafa">
-                <img src={navIcon1} alt="" />
+              <a
+                href="https://linkedin.com/in/moonrafa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedinIcon} alt="" />
               </a>
-              <a href="https://github.com/moonrafa">
-                <img src={navIcon2} alt="" />
+              <a
+                href="https://github.com/moonrafa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={githubIcon} alt="" />
               </a>
-              <a href="https://twitter.com/kiramekinara">
-                <img src={navIcon3} alt="" />
+              <a
+                href="https://twitter.com/kiramekinara"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={twitterIcon} alt="" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log('connect w me')}>
