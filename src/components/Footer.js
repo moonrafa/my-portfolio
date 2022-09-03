@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col size={12} sm={6} className="py-4">
+          <Col size={12} sm={6} className="py-4 logo-footer">
             <img src={logo} />
           </Col>
           <Col size={12} sm={6} className="py-4 text-center text-sm-end">

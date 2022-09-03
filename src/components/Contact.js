@@ -41,8 +41,8 @@ export const Contact = () => {
     <section id="contact" className="contact">
       <Container>
         <Row className="align-items-center">
-          <Col md={6}>
-            <img src={contactImg} />
+          <Col md={6} className="pb-4">
+            <img src={contactImg} alt="contact" />
           </Col>
           <Col md={6}>
             <h2> Get In Touch </h2>
@@ -71,7 +71,7 @@ export const Contact = () => {
                     placeholder="Message"
                     onChange={e => onFormUpdate('message', e.target.value)}
                   ></textarea>
-                  <button type="submit">
+                  <button type="submit" className="button-submit">
                     <span>{buttonText}</span>
                   </button>
                 </Col>
