@@ -10,6 +10,8 @@ import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { faNode } from '@fortawesome/free-brands-svg-icons'
 import { faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import 'animate.css'
+import TrackVisibility from 'react-on-screen'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -52,36 +54,55 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my portfolio.</span>
-            <h1>
-              {"I'm Rafaelly Rodrigues"}
-              <br />
-              <span className="wrap"> {text}</span>
-            </h1>
-            <p>
-              I'm majoring in Information Technology at the Federal University
-              of Mato Grosso do Sul (UFMS). I love building beautiful and
-              functional interfaces. I'm passionate and creative, yet logical
-              and analytical, and I believe that building modern websites
-              require a combination of both in order to create the best user
-              experience. I'm naturally curious, quietly confident, and always
-              learning new things and improving my skills.
-            </p>
-            <button onClick={() => console.log('connect')}>
-              Contact me <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? 'animate__animated animate__fadeIn' : ''
+                  }
+                >
+                  <span className="tagline">Welcome to my portfolio.</span>
+                  <h1>
+                    {"I'm Rafaelly Rodrigues"}
+                    <br />
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "Front-End Developer"]'
+                    >
+                      <span className="wrap"> {text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    I'm majoring in Information Technology at the Federal
+                    University of Mato Grosso do Sul (UFMS). I love building
+                    beautiful and functional interfaces. I'm passionate and
+                    creative, yet logical and analytical, and I believe that
+                    building modern websites require a combination of both in
+                    order to create the best user experience. I'm naturally
+                    curious, quietly confident, and always learning new things
+                    and improving my skills.
+                  </p>
+                  <a href="#contact">
+                    <button>
+                      Contact me <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div className="stage-cube-cont">
               <div className="cubespinner">
                 <div className="face1">
-                  <FontAwesomeIcon icon={faReact} color="#AB7B83" />
+                  <FontAwesomeIcon icon={faReact} color="#fff" />
                 </div>
                 <div className="face2">
-                  <FontAwesomeIcon icon={faHtml5} color="#AB7B83" />
+                  <FontAwesomeIcon icon={faHtml5} color="#fff" />
                 </div>
                 <div className="face3">
-                  <FontAwesomeIcon icon={faCss3} color="#AB7B83" />
+                  <FontAwesomeIcon icon={faCss3} color="#fff" />
                 </div>
                 <div className="face4">
                   <FontAwesomeIcon icon={faJsSquare} color="#fff" />

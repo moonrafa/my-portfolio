@@ -96,9 +96,11 @@ export const NavBar = () => {
               </a>
             </div>
 
-            <button className="vvd" onClick={() => console.log('connect w me')}>
-              <span>Contact me</span>
-            </button>
+            <a href="#contact">
+              <button className="vvd">
+                <span>Contact me</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>
