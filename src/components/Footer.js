@@ -11,7 +11,7 @@ export const Footer = () => {
       <Container>
         <Row>
           <Col size={12} sm={6} className="py-4 logo-footer">
-            <img src={logo} />
+            <img src={logo} alt="logo dev" />
           </Col>
           <Col size={12} sm={6} className="py-4 text-center text-sm-end">
             <div className="social-icon">
