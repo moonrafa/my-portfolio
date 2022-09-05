@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import contactImg from '../assets/img/contact-img.svg'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -14,7 +16,31 @@ export const Contact = () => {
   const onFormUpdate = (category, value) => {
     setFormDetails({ ...formDetails, [category]: value })
   }
-  const handleSubmit = async e => {
+  const refForm = useRef()
+  const sendEmail = e => {
+    e.preventDefault()
+    setButtonText('Sending...')
+    emailjs
+      .sendForm(
+        'service_xz84dke',
+        'template_ra330b3',
+        refForm.current,
+        '5hixrZRlAnZhTf7QG'
+      )
+      .then(
+        () => {
+          setButtonText('Send')
+          setStatus({ success: true, message: 'Message sent successfully' })
+        },
+        () => {
+          setStatus({
+            success: false,
+            message: 'Something went wrong, please try again.'
+          })
+        }
+      )
+  }
+  /* const handleSubmit = async e => {
     e.preventDefault()
     setButtonText('Sending...')
     let response = await fetch('http://localhost:5000/contact', {
@@ -35,7 +61,7 @@ export const Contact = () => {
         message: 'Something went wrong, please try again.'
       })
     }
-  }
+  }*/
 
   return (
     <section id="contact" className="contact">
@@ -46,18 +72,26 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2> Get In Touch </h2>
-            <form onSubmit={handleSubmit}>
+            <form
+              autoComplete="on"
+              ref={refForm}
+              onSubmit={/*handleSubmit*/ sendEmail}
+            >
               <Row>
                 <Col sm={6} className="">
                   <input
+                    name="name"
                     type="text"
                     value={formDetails.name}
                     placeholder="Name"
+                    required
                     onChange={e => onFormUpdate('name', e.target.value)}
                   />
                 </Col>
                 <Col sm={6} className="">
                   <input
+                    name="email"
+                    required
                     type="email"
                     value={formDetails.email}
                     placeholder="Email Address"
@@ -66,6 +100,8 @@ export const Contact = () => {
                 </Col>
                 <Col>
                   <textarea
+                    name="message"
+                    required
                     row="6"
                     value={formDetails.message}
                     placeholder="Message"
@@ -78,7 +114,7 @@ export const Contact = () => {
                   </div>
                 </Col>
                 {status.message && (
-                  <Col>
+                  <Row>
                     <p
                       className={
                         status.success === false ? 'danger' : 'success'
@@ -86,7 +122,7 @@ export const Contact = () => {
                     >
                       {status.message}
                     </p>
-                  </Col>
+                  </Row>
                 )}
               </Row>
             </form>
