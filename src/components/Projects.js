@@ -130,12 +130,6 @@ export const Projects = () => {
       href: 'https://github.com/moonrafa/qr-code-generator'
     },
     {
-      title: 'Expense Tracker',
-      description: 'Track your budget',
-      imgUrl: expense,
-      href: 'https://github.com/moonrafa/expense-tracker'
-    },
-    {
       title: 'Satellist',
       description: 'Fullstack To-do-List App',
       imgUrl: slMobile,
@@ -164,6 +158,12 @@ export const Projects = () => {
       description: 'Fullstack Login Page',
       imgUrl: stLogin,
       href: 'https://github.com/moonrafa/satellist'
+    },
+    {
+      title: 'Expense Tracker',
+      description: 'Track your budget',
+      imgUrl: expense,
+      href: 'https://github.com/moonrafa/expense-tracker'
     }
   ]
   const backProj = [
