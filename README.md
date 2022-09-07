@@ -1,6 +1,6 @@
 # Welcome to my portfolio
 
-Check it live by clicking <a href="https://moonrafa.github.io/my-portfolio"> here </a>
+Check it live by clicking [here](https://moonrafa.github.io/my-portfolio/?target=_blank)
 
 ## Made with:
 
