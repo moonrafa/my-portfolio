@@ -25,6 +25,8 @@ import stLogin from '../assets/img/login.png'
 import planet from '../assets/img/i436547.jpeg'
 import pdf from '../assets/img/demo8.png'
 import pass from '../assets/img/pass.png'
+import dazzcord from '../assets/img/demo2.png'
+import expense from '../assets/img/demo.png'
 
 export const Projects = () => {
   const projects = [
@@ -51,6 +53,12 @@ export const Projects = () => {
       description: 'Generate QR Code from a link',
       imgUrl: qrcode,
       href: 'https://github.com/moonrafa/qr-code-generator'
+    },
+    {
+      title: 'Dazzcord',
+      description: 'Realtime Chat with users and rooms',
+      imgUrl: dazzcord,
+      href: 'https://github.com/moonrafa/dazzcord'
     },
     {
       title: 'Beautysalon.',
@@ -120,6 +128,12 @@ export const Projects = () => {
       description: 'Generate QR Code from a link',
       imgUrl: qrMobile,
       href: 'https://github.com/moonrafa/qr-code-generator'
+    },
+    {
+      title: 'Expense Tracker',
+      description: 'Track your budget',
+      imgUrl: expense,
+      href: 'https://github.com/moonrafa/expense-tracker'
     },
     {
       title: 'Satellist',
