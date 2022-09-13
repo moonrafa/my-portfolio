@@ -12,6 +12,7 @@ import satellist from '../assets/img/demo-desktop (2).png'
 import moongallery from '../assets/img/demo (4).png'
 import facebook from '../assets/img/demo-desktop (1).png'
 import imageSearcher from '../assets/img/demo1.png'
+import linkedin from '../assets/img/in.png'
 import skymobile from '../assets/img/demo14.png'
 import ebMobile from '../assets/img/demo9.png'
 import beMobile from '../assets/img/demo 7.png'
@@ -59,6 +60,11 @@ export const Projects = () => {
       description: 'Realtime Chat with users and rooms',
       imgUrl: dazzcord,
       href: 'https://github.com/moonrafa/dazzcord'
+    },{
+      title: 'Linkedin Clone',
+      description: 'Clone of Linkedin using React, Redux and Firebase',
+      imgUrl: linkedin,
+      href: 'https://github.com/moonrafa/linkedin-clone'
     },
     {
       title: 'Beautysalon.',

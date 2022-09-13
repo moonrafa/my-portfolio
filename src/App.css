@@ -92,6 +92,9 @@ select:focus {
     right: -40px !important;
     width: 60% !important;
   }
+  .proj-imgbx img {
+    max-height: 380px !important;
+  }
 }
 @media (max-width: 1024px) {
   span.navbar-text {
@@ -436,6 +439,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 @media (max-width: 480px) {
   nav.navbar a.navbar-brand {
     width: 15%;
+  }
+  .proj-imgbx img {
+    object-fit: cover;
   }
   .stage-cube-cont {
     position: relative;
