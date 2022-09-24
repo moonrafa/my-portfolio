@@ -28,9 +28,16 @@ import pdf from '../assets/img/demo8.png'
 import pass from '../assets/img/pass.png'
 import dazzcord from '../assets/img/demo2.png'
 import expense from '../assets/img/demo.png'
+import gmail from '../assets/img/gmail-clone.png'
 
 export const Projects = () => {
   const projects = [
+    {
+      title: 'Gmail Clone',
+      description: 'Clone of Gmail using React, Redux and Firebase',
+      imgUrl: gmail,
+      href: 'https://github.com/moonrafa/gmail-clone'
+    },
     {
       title: 'Sky Store',
       description: 'Online store for merch products',
@@ -60,7 +67,8 @@ export const Projects = () => {
       description: 'Realtime Chat with users and rooms',
       imgUrl: dazzcord,
       href: 'https://github.com/moonrafa/dazzcord'
-    },{
+    },
+    {
       title: 'Linkedin Clone',
       description: 'Clone of Linkedin using React, Redux and Firebase',
       imgUrl: linkedin,
@@ -80,7 +88,7 @@ export const Projects = () => {
     },
     {
       title: 'Satellist',
-      description: 'Fullstack To-do-List App',
+      description: 'Fullstack To-do-List App Using Meteor.js',
       imgUrl: satellist,
       href: 'https://github.com/moonrafa/satellist'
     },
