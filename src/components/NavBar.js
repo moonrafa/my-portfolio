@@ -7,6 +7,7 @@ import linkedinIcon from '../assets/img/linkedin-square.svg'
 import githubIcon from '../assets/img/github-alt.svg'
 import twitterIcon from '../assets/img/twitter.svg'
 import lastfmIcon from '../assets/img/lastfm-square.svg'
+import discordIcon from '../assets/img/discordIcon.svg'
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
@@ -81,6 +82,13 @@ export const NavBar = () => {
                 <img src={githubIcon} alt="" />
               </a>
               <a
+                href="https://discord.com/users/770899536318169109"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={discordIcon} alt="" />
+              </a>
+              {/* <a
                 href="https://twitter.com/kiramekinara"
                 target="_blank"
                 rel="noreferrer"
@@ -93,7 +101,7 @@ export const NavBar = () => {
                 rel="noreferrer"
               >
                 <img src={lastfmIcon} alt="" />
-              </a>
+              </a> */}
             </div>
 
             <a href="#contact">

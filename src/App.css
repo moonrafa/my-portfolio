@@ -102,6 +102,12 @@ select:focus {
     margin: 20px 0;
     padding: 20px 0;
   }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    text-align: center;
+  }
+  nav.navbar {
+    background-color: #000;
+  }
   button.navbar-toggler {
     margin: 0 16px;
   }
@@ -437,6 +443,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   }
 }
 @media (max-width: 480px) {
+  .mobile-flex {
+    flex-direction: column-reverse !important;
+  }
   nav.navbar a.navbar-brand {
     width: 15%;
   }
@@ -446,7 +455,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   .stage-cube-cont {
     position: relative;
     width: 100%;
-    height: 445px;
+    height: 304px;
     top: 0;
   }
   .cubespinner div {
