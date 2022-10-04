@@ -1,14 +1,14 @@
-import demo1 from '../assets/img/Sky-Store.png'
+import skyStore from '../assets/img/Sky-Store.png'
 import { ProjectCard } from './ProjectCard'
 import colorSharp2 from '../assets/img/color-sharp2.png'
 import Nav from 'react-bootstrap/Nav'
 import { Container, Row, Col, Tab } from 'react-bootstrap'
-import demo10 from '../assets/img/demo10.png'
-import demo6 from '../assets/img/demo 6.png'
-import qrcode from '../assets/img/demo-desktop (3).png'
+import easybank from '../assets/img/easybank.png'
+import bookmark from '../assets/img/bookmark.png'
+import qrcode from '../assets/img/qrdesktop.png'
 import business from '../assets/img/beautysalon-.png'
-import noteit from '../assets/img/demo (5).png'
-import satellist from '../assets/img/demo-desktop (2).png'
+import noteit from '../assets/img/noteit.png'
+import satellist from '../assets/img/listDesktop.png'
 import moongallery from '../assets/img/demo (4).png'
 import facebook from '../assets/img/demo-desktop (1).png'
 import imageSearcher from '../assets/img/demo1.png'
@@ -19,7 +19,7 @@ import beMobile from '../assets/img/demo 7.png'
 import qrMobile from '../assets/img/demo-mobile (2).png'
 import bsMobile from '../assets/img/demo33.png'
 import slMobile from '../assets/img/demo-mobile (1).png'
-import ig from '../assets/img/demo (3).png'
+import ig from '../assets/img/ig.png'
 import clubhouse from '../assets/img/demo (1).png'
 import ios from '../assets/img/demo (2).png'
 import stLogin from '../assets/img/login.png'
@@ -29,6 +29,9 @@ import pass from '../assets/img/pass.png'
 import dazzcord from '../assets/img/demo2.png'
 import expense from '../assets/img/demo.png'
 import gmail from '../assets/img/gmail-clone.png'
+import visa from '../assets/img/credit-card.jpg'
+import numberFacts from '../assets/img/demo (6).png'
+import quiz from '../assets/img/Quiz-Desktop.png'
 
 export const Projects = () => {
   const projects = [
@@ -37,30 +40,6 @@ export const Projects = () => {
       description: 'Clone of Gmail using React, Redux and Firebase',
       imgUrl: gmail,
       href: 'https://github.com/moonrafa/gmail-clone'
-    },
-    {
-      title: 'Sky Store',
-      description: 'Online store for merch products',
-      imgUrl: demo1,
-      href: 'https://github.com/moonrafa/sky-store'
-    },
-    {
-      title: 'Easybank',
-      description: 'Digital Bank Landing Page',
-      imgUrl: demo10,
-      href: 'https://github.com/moonrafa/easybank'
-    },
-    {
-      title: 'Bookmark Extension',
-      description: 'Bookmark Extension Landing Page',
-      imgUrl: demo6,
-      href: 'https://github.com/moonrafa/extension-landing-page'
-    },
-    {
-      title: 'QRCode Generator',
-      description: 'Generate QR Code from a link',
-      imgUrl: qrcode,
-      href: 'https://github.com/moonrafa/qr-code-generator'
     },
     {
       title: 'Dazzcord',
@@ -74,6 +53,31 @@ export const Projects = () => {
       imgUrl: linkedin,
       href: 'https://github.com/moonrafa/linkedin-clone'
     },
+    {
+      title: 'Sky Store',
+      description: 'Online store for merch products',
+      imgUrl: skyStore,
+      href: 'https://github.com/moonrafa/sky-store'
+    },
+    {
+      title: 'Easybank',
+      description: 'Digital Bank Landing Page',
+      imgUrl: easybank,
+      href: 'https://github.com/moonrafa/easybank'
+    },
+    {
+      title: 'Bookmark Extension',
+      description: 'Bookmark Extension Landing Page',
+      imgUrl: bookmark,
+      href: 'https://github.com/moonrafa/extension-landing-page'
+    },
+    {
+      title: 'QRCode Generator',
+      description: 'Generate QR Code from a link',
+      imgUrl: qrcode,
+      href: 'https://github.com/moonrafa/qr-code-generator'
+    },
+
     {
       title: 'Beautysalon.',
       description: 'Business Landing Page ',
@@ -99,6 +103,12 @@ export const Projects = () => {
       href: 'https://github.com/moonrafa/firegram-react'
     },
     {
+      title: 'Quiz',
+      description: 'Quiz made with typescript and react',
+      imgUrl: quiz,
+      href: 'https://github.com/moonrafa/quiz'
+    },
+    {
       title: 'Login Facebook',
       description: 'Login Facebook Interface Clone',
       imgUrl: facebook,
@@ -109,6 +119,12 @@ export const Projects = () => {
       description: 'React Image Searcher',
       imgUrl: imageSearcher,
       href: 'https://github.com/moonrafa/react-image-searcher'
+    },
+    {
+      title: 'Number Facts',
+      description: 'Type a number and get a fact about it',
+      imgUrl: numberFacts,
+      href: 'https://github.com/moonrafa/number-facts'
     }
   ]
   const mobile = [
@@ -181,6 +197,12 @@ export const Projects = () => {
     }
   ]
   const backProj = [
+    {
+      title: 'Credit Card Auth',
+      description: 'Credit Card Authentication',
+      imgUrl: visa,
+      href: 'https://github.com/moonrafa/credit-card-authentication'
+    },
     {
       title: 'PassGen',
       description: 'Password Generator',
