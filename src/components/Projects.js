@@ -32,9 +32,17 @@ import gmail from '../assets/img/gmail-clone.png'
 import visa from '../assets/img/credit-card.jpg'
 import numberFacts from '../assets/img/demo (6).png'
 import quiz from '../assets/img/Quiz-Desktop.png'
+import netflix from '../assets/img/netflix.png'
 
 export const Projects = () => {
   const projects = [
+    {
+      title: 'Netflix Clone',
+      description:
+        'Clone of Netflix with User and Payment Authentication using React, Stripe, Redux and Firebase',
+      imgUrl: netflix,
+      href: 'https://github.com/moonrafa/netflix-clone'
+    },
     {
       title: 'Gmail Clone',
       description: 'Clone of Gmail using React, Redux and Firebase',
