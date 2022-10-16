@@ -2,7 +2,6 @@ import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import icon1 from '../assets/img/file-code-o.svg'
 import icon2 from '../assets/img/react.svg'
 import icon3 from '../assets/img/mobile.svg'
 import icon4 from '../assets/img/database.svg'
@@ -11,6 +10,8 @@ import icon6 from '../assets/img/code-fork.svg'
 import icon7 from '../assets/img/code.svg'
 import icon8 from '../assets/img/cloud-check.svg'
 import icon9 from '../assets/img/browser.svg'
+import icon10 from '../assets/img/layers.svg'
+import icon11 from '../assets/img/language.svg'
 import colorSharp from '../assets/img/color-sharp.png'
 
 export const Skills = () => {
@@ -44,9 +45,10 @@ export const Skills = () => {
                 Skilled in development technologies such as{' '}
                 <span className="lightpink">HTML</span>,{' '}
                 <span className="lightpink">CSS</span>,{' '}
-                <span className="lightpink">JavaScript</span>,{' '}
+                <span className="lightpink">JavaScript +ES6 </span>,{' '}
                 <span className="lightpink">JQuery</span>,{' '}
                 <span className="lightpink">React</span>,{' '}
+                <span className="lightpink">Express</span>,{' '}
                 <span className="lightpink">Bootstrap</span>,{' '}
                 <span className="lightpink">TailwindCSS</span>,{' '}
                 <span className="lightpink">Node.js</span>,{' '}
@@ -62,20 +64,29 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img className="skill-img" src={icon1} alt="skill 1" />
-                  <h5>Web Development</h5>
+                  <img className="skill-img" src={icon2} alt="skill 1" />
+                  <h5>Front-End Development</h5>
                 </div>
-                <div className="item">
-                  <img className="skill-img" src={icon2} alt="skill 2" />
-                  <h5>CSS and JavaScript Frameworks</h5>
-                </div>
+
                 <div className="item">
                   <img className="skill-img" src={icon5} alt="skill 5" />
                   <h5>Version Control with Git </h5>
                 </div>
                 <div className="item">
+                  <img className="skill-img" src={icon8} alt="skill 4" />
+                  <h5>Testing</h5>
+                </div>
+                <div className="item">
+                  <img className="skill-img" src={icon4} alt="skill 4" />
+                  <h5>Back-End with Node.js</h5>
+                </div>
+                <div className="item">
+                  <img className="skill-img" src={icon10} alt="skill 2" />
+                  <h5>Agile Methodologies</h5>
+                </div>
+                <div className="item">
                   <img className="skill-img" src={icon3} alt="skill 3" />
-                  <h5>Responsive Design</h5>
+                  <h5>Responsive and UX/UI Design</h5>
                 </div>
                 <div className="item">
                   <img className="skill-img" src={icon6} alt="skill 6" />
@@ -85,19 +96,13 @@ export const Skills = () => {
                   <img className="skill-img" src={icon9} alt="skill 1" />
                   <h5>DOM Manipulation</h5>
                 </div>
-
-                <div className="item">
-                  <img className="skill-img" src={icon4} alt="skill 4" />
-                  <h5>Databases</h5>
-                </div>
-
                 <div className="item">
                   <img className="skill-img" src={icon7} alt="skill 7" />
                   <h5>Debugging </h5>
                 </div>
                 <div className="item">
-                  <img className="skill-img" src={icon8} alt="skill 8" />
-                  <h5>Problem-Solving</h5>
+                  <img className="skill-img" src={icon11} alt="skill 7" />
+                  <h5>English and Portuguese Fluency </h5>
                 </div>
               </Carousel>
             </div>
