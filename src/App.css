@@ -790,6 +790,9 @@ a .proj-txtx {
   position: relative;
   transition: 0.3s ease-in-out;
 }
+.txt-none {
+  text-decoration: none;
+}
 .contact form button span {
   z-index: 1;
   position: relative;

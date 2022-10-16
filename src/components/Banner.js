@@ -12,6 +12,7 @@ import { faNode } from '@fortawesome/free-brands-svg-icons'
 import { faGitAlt } from '@fortawesome/free-brands-svg-icons'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen'
+import resume from '../assets/CV-english.pdf'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -83,9 +84,14 @@ export const Banner = () => {
                     curious, quietly confident, and always learning new things
                     and improving my skills.
                   </p>
-                  <a href="#contact">
+                  <a
+                    href={resume}
+                    className="txt-none"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button>
-                      Contact me <ArrowRightCircle size={25} />
+                      Download Resume <ArrowRightCircle size={25} />
                     </button>
                   </a>
                 </div>
