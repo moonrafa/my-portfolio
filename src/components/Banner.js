@@ -59,7 +59,9 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? 'animate__animated animate__fadeIn' : ''
+                    isVisible
+                      ? 'text-port animate__animated animate__fadeIn'
+                      : 'text-port'
                   }
                 >
                   <span className="tagline">Welcome to my portfolio.</span>
@@ -91,7 +93,7 @@ export const Banner = () => {
                     rel="noreferrer"
                   >
                     <button>
-                      Download Resume <ArrowRightCircle size={25} />
+                      Download CV <ArrowRightCircle size={25} />
                     </button>
                   </a>
                 </div>

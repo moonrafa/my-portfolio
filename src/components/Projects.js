@@ -33,6 +33,9 @@ import visa from '../assets/img/credit-card.jpg'
 import numberFacts from '../assets/img/demo (6).png'
 import quiz from '../assets/img/Quiz-Desktop.png'
 import netflix from '../assets/img/netflix.png'
+import last from '../assets/img/home.png'
+import huluMobile from '../assets/img/Hulu.png'
+import hulu from '../assets/img/Huludesktop.png'
 
 export const Projects = () => {
   const projects = [
@@ -84,6 +87,18 @@ export const Projects = () => {
       description: 'Generate QR Code from a link',
       imgUrl: qrcode,
       href: 'https://github.com/moonrafa/qr-code-generator'
+    },
+    {
+      title: 'Hulu Clone',
+      description: 'Clone of Hulu using Next.js and TailwindCSS',
+      imgUrl: hulu,
+      href: 'https://github.com/moonrafa/hulu-clone'
+    },
+    {
+      title: 'Last.fm Clone',
+      description: 'Clone of Last.fm using Reactjs',
+      imgUrl: last,
+      href: 'https://github.com/moonrafa/lastfm-clone'
     },
 
     {
@@ -141,6 +156,12 @@ export const Projects = () => {
       description: 'Online store for merch products',
       imgUrl: skymobile,
       href: 'https://github.com/moonrafa/sky-store'
+    },
+    {
+      title: 'Hulu Clone',
+      description: 'Clone of Hulu using Next.js and TailwindCSS',
+      imgUrl: huluMobile,
+      href: 'https://github.com/moonrafa/hulu-clone'
     },
     {
       title: 'Easybank',

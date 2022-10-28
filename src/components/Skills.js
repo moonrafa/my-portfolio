@@ -43,11 +43,13 @@ export const Skills = () => {
               <h2>Skills</h2>
               <p>
                 Skilled in development technologies such as{' '}
-                <span className="lightpink">HTML</span>,{' '}
-                <span className="lightpink">CSS</span>,{' '}
+                <span className="lightpink">Next.js </span>,{' '}
+                <span className="lightpink">Typescript </span>,{' '}
                 <span className="lightpink">JavaScript +ES6 </span>,{' '}
                 <span className="lightpink">JQuery</span>,{' '}
                 <span className="lightpink">React</span>,{' '}
+                <span className="lightpink">HTML</span>,{' '}
+                <span className="lightpink">CSS</span>,{' '}
                 <span className="lightpink">Express</span>,{' '}
                 <span className="lightpink">Bootstrap</span>,{' '}
                 <span className="lightpink">TailwindCSS</span>,{' '}
@@ -77,20 +79,20 @@ export const Skills = () => {
                   <h5>Testing</h5>
                 </div>
                 <div className="item">
-                  <img className="skill-img" src={icon4} alt="skill 4" />
-                  <h5>Back-End with Node.js</h5>
-                </div>
-                <div className="item">
                   <img className="skill-img" src={icon10} alt="skill 2" />
                   <h5>Agile Methodologies</h5>
                 </div>
                 <div className="item">
                   <img className="skill-img" src={icon3} alt="skill 3" />
-                  <h5>Responsive and UX/UI Design</h5>
+                  <h5>Responsive Design</h5>
                 </div>
                 <div className="item">
                   <img className="skill-img" src={icon6} alt="skill 6" />
                   <h5>Data Structures and Algorithms </h5>
+                </div>
+                <div className="item">
+                  <img className="skill-img" src={icon4} alt="skill 4" />
+                  <h5>Back-End Development </h5>
                 </div>
                 <div className="item">
                   <img className="skill-img" src={icon9} alt="skill 1" />

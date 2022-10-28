@@ -68,6 +68,7 @@ export const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a
+                aria-label="Linkedin"
                 href="https://linkedin.com/in/moonrafa"
                 target="_blank"
                 rel="noreferrer"
@@ -75,6 +76,7 @@ export const NavBar = () => {
                 <img src={linkedinIcon} alt="" />
               </a>
               <a
+                aria-label="Github"
                 href="https://github.com/moonrafa"
                 target="_blank"
                 rel="noreferrer"
@@ -82,6 +84,7 @@ export const NavBar = () => {
                 <img src={githubIcon} alt="" />
               </a>
               <a
+                aria-label="Discord"
                 href="https://discord.com/users/770899536318169109"
                 target="_blank"
                 rel="noreferrer"
